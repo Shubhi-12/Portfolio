@@ -1,28 +1,32 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'core/csss/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/all.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
-</head>
-<body>
-    <i class="fa-sharp fa-light fa-face-awesome"></i>
-    <i class="fa-sharp fa-light fa-download"></i>
-    <i class="fa-sharp fa-light fa-bell"></i>
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-sharp fa-solid fa-phone"></i>
-    <i class="fas fa-wifi"></i>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos, aliquid aut veniam nihil velit delectus nulla amet neque, fuga at? Eaque laudantium ipsam quas delectus ab repudiandae placeat aliquid.</p>
-    <i clas
-    s="fas fa-location-arrow"></i>
-    <script src="{% static 'core/js/all.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.js' %}"></script>
-    <script src="{% static 'core/js/jquery.js' %}"></script>
-    <script src="{% static 'core/js/popper.js' %}"></script>
-</body>
-</html>
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="text-center mt-4">
+  <img src="{% static 'core/images/pass.jpg' %}" alt="profilepic"
+  class="img-thumbnail height="90px" width="220px" ">
+  <div class="text-light text-left">
+    <h2>Hello,</h2>
+    <p class="text-justify mt-2">
+      I am a final year MCA student . I am an ambitious and hard-working person,
+      looking to kickstart my career in an esteemed organisation and incorporate
+      my skills. Ambitious and hard-working individual. Holding a degree in
+      Bachelors of Computer Application and pursuing MCA from Pranveer Singh Institute of Technology. 
+    </p>
+    
+    <p class="text-justify mt-2">
+      I am well-versed in C , Python and have
+      programming experience on coding platforms such as LeetCode and HackerRank. I am also working on college
+      and my personal projects. I have also learned HTML , CSS , core Java and DJANGO framework .
+    </p>
+    <a
+      href="https://www.hackerrank.com/31901_A"
+      class="btn btn-outline-info my-3 mr-5"
+      >Contact</a
+    >
+    <a href="" class="btn btn-outline-info my-3 mr-5">LeetCode</a>
+    <a href="https://www.hackerrank.com/31901_A" target="_blank" class="btn btn-outline-info my-3 mr-5">HackerRank</a>
+    <a href="" class="btn btn-outline-info my-3 mr-5">GitHub</a>
+    <a href="https://drive.google.com/file/d/10FaNMwRSPQyu26euzMrFLwdg0E7hoGtz/view?usp=sharing" class="btn btn-outline-info my-3 mr-5">Resume</a>
+    <a href="" class="btn btn-outline-info my-3 mr-5">LinkedIn</a>
+  </div>
+</div>
+
+{% endblock content %}

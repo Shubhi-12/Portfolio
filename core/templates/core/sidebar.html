@@ -1,0 +1,15 @@
+{% load static %}
+<div class=" border-right border-warning h-100">
+    <div class="text-center text-light" >
+         <img src="{% static 'core/images/pass.jpg' %}" alt="profilepic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+        <h4 class=" mt-2" >Shubhi Shukla</h4>
+    </div>
+    
+   <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link {{home}}">HOME</a> 
+        <a href="{% url 'service' %}" class="nav-link {{service}}">SERVICES</a> 
+        <a href="{% url 'skills' %}" class="nav-link {{skills}}">SKILL</a> 
+        <a href="{% url 'contact' %}" class="nav-link {{contact}}">CONTACT</a>             
+    </nav>
+</div>
